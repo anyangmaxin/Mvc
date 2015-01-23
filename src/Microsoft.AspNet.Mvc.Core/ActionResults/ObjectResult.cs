@@ -42,6 +42,7 @@ namespace Microsoft.AspNet.Mvc
                 DeclaredType = DeclaredType,
                 ActionContext = context,
                 Object = Value,
+                StatusCode = StatusCode
             };
 
             var selectedFormatter = SelectFormatter(formatterContext, formatters);

@@ -37,5 +37,10 @@ namespace Microsoft.AspNet.Mvc
         /// The content type which is chosen by the selected formatter.
         /// </summary>
         public MediaTypeHeaderValue SelectedContentType { get; set; }
+
+        /// <summary>
+        /// Gets or sets the status code used by the formatter.
+        /// </summary>
+        public int? StatusCode { get; set; }
     }
 }
