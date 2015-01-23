@@ -70,7 +70,8 @@ namespace Microsoft.AspNet.Mvc.ApplicationModels
         public IList<IRouteConstraintProvider> RouteConstraints { get; private set; }
 
         /// <summary>
-        /// Stores arbitrary metadata properties associated with the controller.
+        /// Gets a set of properties associated with the controller.
+        /// These properties will be copied to <see cref="ActionDescriptor.Properties"/>.
         /// </summary>
         /// <remarks>
         /// Entries will take precedence over entries with the same key

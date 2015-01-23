@@ -19,7 +19,8 @@ namespace Microsoft.AspNet.Mvc.ApplicationModels
         public IList<IFilter> Filters { get; private set; }
 
         /// <summary>
-        /// Stores arbitrary metadata properties associated with all actions.
+        /// Gets a set of properties associated with all actions.
+        /// These properties will be copied to <see cref="ActionDescriptor.Properties"/>.
         /// </summary>
         public IDictionary<object, object> Properties { get; }
     }
