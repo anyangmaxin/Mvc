@@ -322,7 +322,7 @@ namespace Microsoft.AspNet.Mvc.FunctionalTests
             var response = await client.SendAsync(request);
 
             // Assert
-            Assert.Equal(HttpStatusCode.OK, response.StatusCode);
+            Assert.Equal(HttpStatusCode.Created, response.StatusCode);
         }
     }
 }

@@ -80,7 +80,7 @@ namespace ActionResultsWebSite
         public IActionResult GetObjectResultWithNoContent()
         {
             var result = new ObjectResult(null);
-            result.StatusCode = 200;
+            result.StatusCode = 201;
             return result;
         }
 

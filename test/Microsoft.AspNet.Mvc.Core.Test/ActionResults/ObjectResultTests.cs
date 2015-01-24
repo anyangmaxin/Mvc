@@ -449,10 +449,10 @@ namespace Microsoft.AspNet.Mvc.Core.Test.ActionResults
                                                         httpResponse.Object,
                                                         requestAcceptHeader: null,
                                                         requestContentType: null);
-
-            // Act
             var result = new ObjectResult(null);
             result.StatusCode = expectedStatusCode;
+
+            // Act
             await result.ExecuteResultAsync(actionContext);
 
             // Assert
